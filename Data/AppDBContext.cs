@@ -12,6 +12,9 @@ namespace terminus_webapi.Data
 
         }
 
+        public DbSet<Company> Companies { get; set; }
+        public DbSet<Tenant> Tenants { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
