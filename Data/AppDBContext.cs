@@ -18,6 +18,8 @@ namespace terminus_webapi.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            //as
         }
     }
 }
