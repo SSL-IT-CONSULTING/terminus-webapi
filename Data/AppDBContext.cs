@@ -14,6 +14,11 @@ namespace terminus_webapi.Data
 
         public DbSet<Company> Companies { get; set; }
         public DbSet<Tenant> Tenants { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Expense> Expenses { get; set; }
+        public DbSet<Revenue> Revenues { get; set; }
+        public DbSet<Property> Properties { get; set; }
+ 
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -21,5 +26,14 @@ namespace terminus_webapi.Data
 
             //as
         }
+ 
+
+        public DbSet<terminus_webapi.Entities.TenantProperty> TenantProperty { get; set; }
+ 
+
+        public DbSet<terminus_webapi.Entities.Vendor> Vendor { get; set; }
+ 
+
+        public DbSet<terminus_webapi.Entities.User> User { get; set; }
     }
 }
